@@ -25,7 +25,7 @@ Usage :-
 4) Access it through browser
 
 ==========
-Licnese :-
+License :-
 ==========
 
 Do what so ever you want with it.

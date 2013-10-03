@@ -1,0 +1,33 @@
+set title "Look 1" tc rgb "blue"
+set terminal postscript
+set output "1.ps"
+set xlabel "x axis" tc rgb "yellow"
+set ylabel "y axis" tc rgb "red"
+set zlabel "z axis" tc rgb "cyan"
+set border linecolor rgbcolor "grey"
+splot "graph.graph" using 1:2:3 with lines lt rgb "green"
+set output
+
+set title "Look 2" tc rgb "blue"
+set terminal postscript
+set output "2.ps"
+set xlabel "x axis" tc rgb "yellow"
+set ylabel "y axis" tc rgb "red"
+set zlabel "z axis" tc rgb "cyan"
+set border linecolor rgbcolor "grey"
+splot "graph.graph" using 1:2:3 lt rgb "green"
+set output
+
+
+
+set title "Look 3" tc rgb "blue"
+set terminal postscript
+set output "3.ps"
+set xlabel "x axis" tc rgb "yellow"
+set ylabel "y axis" tc rgb "red"
+set zlabel "z axis" tc rgb "cyan"
+set border linecolor rgbcolor "grey"
+set hidden3d
+set pm3d
+splot "graph.graph" using 1:2:3
+set output
